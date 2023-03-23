@@ -117,6 +117,27 @@ local CLASSES = {
 	},
 }
 
+local CLASSREAGENTSANDB = set(
+	-- DRUID
+	17026, 17038, 17021, 17037, 17036, 17035, 17034,
+	-- MAGE
+	17020, 17032, 17031,
+	-- PALADIN
+	21177, 17033,
+	-- PRIEST
+	17029, 17029, 17028,
+	-- ROGUE
+	8923, 5173, 8924, 2930, 2928, 5140, 5060,
+	-- SHAMAN
+	17030, 
+	-- WARLOCK
+	16583, 5565,
+	-- WARRIOR(BANDAGES)
+	1251, 2581, 3530, 3531, 6450, 6451, 8544, 8545, 14529, 14530,
+	-- BGS BANDAGES
+	19068, 19067, 19066, 20067, 200065, 20066, 19307
+)
+
 local model, itemStacks, itemClasses, itemSortKeys
 
 do
@@ -404,6 +425,10 @@ function Item(container, position)
 		-- mounts
 		elseif MOUNTS[itemID] then
 			tinsert(sortKey, 2)
+		
+		--CLASSREAGENTSANDB
+		elseif CLASSREAGENTSANDB[itemID] then
+			tinsert(sortKey, 2.5)	
 
 		-- special items
 		elseif SPECIAL[itemID] then
