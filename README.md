@@ -11,4 +11,6 @@ __IMPORTANT: If you want buttons then get this too: https://github.com/shirsig/C
 /run GetSortBagsRightToLeft(): Boolean -- Get sort direction
 ```
 
-Just added class reagents sorting key
+***
+- added class reagents sorting key
+- slightly increased sort delay
