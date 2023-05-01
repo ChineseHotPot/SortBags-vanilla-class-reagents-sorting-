@@ -1,3 +1,5 @@
+added class reagents sorting
+
 # SortBags
 Bag sorting for 1.12 and 1.13.<br/>
 __IMPORTANT: Use this branch for classic: https://github.com/shirsig/SortBags/tree/retail__<br/>
